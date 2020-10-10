@@ -1,5 +1,6 @@
 package com.moringaschool.mycloudtransports;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,15 +28,40 @@ public class MainActivity extends AppCompatActivity {
         Info=(TextView)findViewById(R.id.tvInfo);
         login.setOnClickListener(new View.OnClickListener);
 
-        Info.SetText("No of attempts remaining:10");
+        Info.setText("No of attempts remaining:10");
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                validate (Name.getText().toString(), password.getText().toString())
+
+            }
+        });
+
 
         @Override
-        public void Onclick (View v)
-        validate (Name.getText().toString(), Password.getText().toString())
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
         })
 }
+
+//create validate function
+private void validate( String UserName,String UserPassword){
+    if((UserName.equals("howCreateIt")) && (UserPassword.equals("yes"))){
+        Intent intent = new Intent(MainActivity.this, SelectionSeatsActivity.class);
+        startActivity(intent);
+    }else{
+        Counter--;
+
+        Info.setText("No attempts remaining: " + String.valueOf(Counter));
+        if (Counter ==0){
+            login.setEnabled(false);
+        }
+
+
+    }
+}
+
+    }
