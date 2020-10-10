@@ -29,9 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
         Info.SetText("No of attempts remaining:10");
 
+        @Override
+        public void Onclick (View v)
+        validate (Name.getText().toString(), Password.getText().toString())
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+        })
 }
