@@ -25,27 +25,19 @@ public class MainActivity extends AppCompatActivity {
         Name = (EditText) findViewById(R.id.etName);
         password = (EditText) findViewById(R.id.etpassword);
         login = (Button) findViewById(R.id.btnlogin);
-        Info=(TextView)findViewById(R.id.tvInfo);
+        Info = (TextView) findViewById(R.id.tvInfo);
         login.setOnClickListener(new View.OnClickListener);
 
         Info.setText("No of attempts remaining:10");
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validate (Name.getText().toString(), password.getText().toString())
+                validate(Name.getText().toString(), password.getText().toString())
 
             }
         });
 
-
-        @Override
-     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
-
-        })
-}
 
 //create validate function
 private void validate( String UserName,String UserPassword){
