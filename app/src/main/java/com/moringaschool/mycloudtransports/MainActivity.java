@@ -26,13 +26,12 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.etpassword);
         login = (Button) findViewById(R.id.btnlogin);
         Info = (TextView) findViewById(R.id.tvInfo);
-        login.setOnClickListener(new View.OnClickListener);
 
         Info.setText("No of attempts remaining:10");
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validate(Name.getText().toString(), password.getText().toString())
+                validate(Name.getText().toString(), password.getText().toString());
 
             }
         });
