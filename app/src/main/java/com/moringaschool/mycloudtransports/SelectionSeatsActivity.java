@@ -26,15 +26,15 @@ public class SelectionSeatsActivity extends AppCompatActivity {
         textView = findViewById(R.id.text_view_selected);
         Button buttonApply = findViewById(R.id.button_apply);
 
-
-        public void onClick(View v);{
+@Override
+        public void onClick(View v){
             int radioId = radioGroup.getCheckedRadioButtonId();
             radioButton = findViewById(radioId);
 
             textView.setText("Your choice" + radioButton.getText());
         }
-    )};
-
+    });
+}
 
 public  void checkedButton(View view){
     int radioId = radioGroup.getCheckedRadioButtonId();

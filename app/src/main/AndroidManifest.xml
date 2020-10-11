@@ -25,6 +25,14 @@
                 android:value="com.moringaschool.mycloudtransports.MainActivity">
             </meta-data>
         </activity>
+
+        <activity
+            android:name=".BookingSeats">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.mycloudtransports.MainActivity">
+            </meta-data>
+        </activity>
     </application>
 
 </manifest>
