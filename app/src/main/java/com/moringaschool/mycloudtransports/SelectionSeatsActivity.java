@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,7 @@ public class SelectionSeatsActivity extends AppCompatActivity {
     RadioGroup radioGroup;
     RadioButton radioButton;
     TextView textView;
+    private Object v;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +26,20 @@ public class SelectionSeatsActivity extends AppCompatActivity {
         textView = findViewById(R.id.text_view_selected);
         Button buttonApply = findViewById(R.id.button_apply);
 
-        @Override
-                public void onClick(View v){
-            
+
+        public void onClick(View v);{
+            int radioId = radioGroup.getCheckedRadioButtonId();
+            radioButton = findViewById(radioId);
+
+            textView.setText("Your choice" + radioButton.getText());
         }
-    }
+    )};
+
+
+public  void checkedButton(View view){
+    int radioId = radioGroup.getCheckedRadioButtonId();
+    radioButton = findViewById(radioId);
+
+    Toast.makeText(this, "Selected Radio Button" + radioButton.getText(), Toast.LENGTH_SHORT).show();
+}
 }
