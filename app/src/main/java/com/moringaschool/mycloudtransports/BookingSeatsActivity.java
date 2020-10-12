@@ -21,7 +21,7 @@ public class BookingSeatsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bookingseatsactivity);
         buttonSubmit = (Button) findViewById(R.id.buttonSubmit);
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
+        radioGroup = (RadioGroup) findViewById(R.id.rGroup);
 
         /*
             Submit Button

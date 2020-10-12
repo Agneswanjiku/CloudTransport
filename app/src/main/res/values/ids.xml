@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="etpassword" type="id">etPassword</item>
-    <item name="radioGroup" type="id">rGroup</item>
-    <item name="text_view_selected" type="id">rselected</item>>
-    <item name="button_apply" type="id">buttonsubmit</item>>
+<!--    <item name="etpassword" type="id">etPassword</item>-->
+<!--    <item name="radioGroup" type="id">rGroup</item>-->
+<!--    <item name="text_view_selected" type="id">rselected</item>>-->
+<!--    <item name="button_apply" type="id">buttonsubmit</item>>-->
+    <item name="etpassword" type="id">password</item>
+    <item name="rGroup" type="id">radiogroup</item>
 </resources>
