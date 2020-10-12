@@ -19,3 +19,4 @@ LOGIN FORM
 ![Screenshot from 2020-10-12 09-18-27](https://user-images.githubusercontent.com/63198747/95715083-eb182d00-0c71-11eb-8fb2-24d6e89ab053.png)
 
 SelectionSeatsActivity
+![Screenshot from 2020-10-12 10-06-58](https://user-images.githubusercontent.com/63198747/95715572-c1abd100-0c72-11eb-9ad7-f1b09a2f9486.png)
