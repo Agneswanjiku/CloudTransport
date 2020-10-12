@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".SelectionSeatsActivity">
+            android:name=".SelectionVehicleActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.moringaschool.mycloudtransports.MainActivity">

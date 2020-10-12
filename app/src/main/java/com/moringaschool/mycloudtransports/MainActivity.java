@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //create validate function
 private void validate( String UserName,String UserPassword){
     if((UserName.equals("howCreateIt")) && (UserPassword.equals("yes"))){
-        Intent intent = new Intent(MainActivity.this, SelectionSeatsActivity.class);
+        Intent intent = new Intent(MainActivity.this, SelectionVehicleActivity.class);
         startActivity(intent);
     }else{
         Counter--;
