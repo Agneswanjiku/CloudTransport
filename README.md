@@ -21,3 +21,4 @@ LOGIN FORM
 SelectionSeatsActivity
 ![Screenshot from 2020-10-12 10-06-58](https://user-images.githubusercontent.com/63198747/95715572-c1abd100-0c72-11eb-9ad7-f1b09a2f9486.png)
 BookingSeatsActivity
+![Screenshot from 2020-10-12 10-09-49](https://user-images.githubusercontent.com/63198747/95715869-38e16500-0c73-11eb-9f1e-05d34d6617e6.png)
