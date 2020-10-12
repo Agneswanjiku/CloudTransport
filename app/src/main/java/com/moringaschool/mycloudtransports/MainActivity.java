@@ -1,5 +1,6 @@
 package com.moringaschool.mycloudtransports;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private Button login;
     private int Counter;
     private TextView Info;
+
+    public MainActivity(Context mMockContext) {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
