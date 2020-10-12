@@ -26,12 +26,10 @@
             </meta-data>
         </activity>
 
-        <activity
-            android:name=".BookingSeats">
+        <activity android:name=".BookingSeatsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.moringaschool.mycloudtransports.MainActivity">
-            </meta-data>
+                android:value="com.moringaschool.mycloudtransports.MainActivity"></meta-data>
         </activity>
     </application>
 

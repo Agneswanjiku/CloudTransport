@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My CloudTransports</string>
+    <string name="radio_middleSeats">Female</string>
+    <string name="radio_economicSeats">Female</string>
+    <string name="radio_nobbleSeats">Female</string>
+
+    <string name="btn_display">Display</string>
 </resources>
