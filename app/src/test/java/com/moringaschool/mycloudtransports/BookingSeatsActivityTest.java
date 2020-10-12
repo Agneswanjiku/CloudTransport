@@ -1,6 +1,8 @@
 package com.moringaschool.mycloudtransports;
 
 import android.preference.TwoStatePreference;
+import android.widget.Button;
+import android.widget.RadioGroup;
 
 import org.junit.After;
 import org.junit.Before;
@@ -17,16 +19,7 @@ public class BookingSeatsActivityTest {
     public void setUp() throws Exception {
 
     }
-    @Test
-    public void canBeExplicitlyChecked() throws Exception {
-        assertFalse(radioButton.isChecked());
 
-        radioButton.setChecked(true);
-        assertTrue(radioButton.isChecked());
-
-        radioButton.setChecked(false);
-        assertFalse(radioButton.isChecked());
-    }
 
     @Test
     public void canBeToggledBetweenCheckedState() throws Exception {
@@ -38,7 +31,6 @@ public class BookingSeatsActivityTest {
         radioButton.toString();
         assertTrue(radioButton.isChecked()); // radio buttons can't be turned off again with a click
     }
-
 
 
     @After
