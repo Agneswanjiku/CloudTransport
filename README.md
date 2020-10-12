@@ -17,3 +17,5 @@ user to select Vehicles of their choices and book seat of their choices.
 Behaviour Driven Development
 LOGIN FORM
 ![Screenshot from 2020-10-12 09-18-27](https://user-images.githubusercontent.com/63198747/95715083-eb182d00-0c71-11eb-8fb2-24d6e89ab053.png)
+
+SelectionSeatsActivity
