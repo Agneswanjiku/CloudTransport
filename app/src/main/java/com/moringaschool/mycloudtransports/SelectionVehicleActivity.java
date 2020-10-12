@@ -14,8 +14,8 @@ public class SelectionVehicleActivity extends AppCompatActivity {
 
     RadioGroup radioGroup;
     RadioButton radioButton;
-    TextView textView;
-    private Object v;
+    RadioButton selectedRadioButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +33,12 @@ public class SelectionVehicleActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // get the selected RadioButton of the group
-                selectedRadioButton  = (RadioButton)findViewById(radioGroup.getCheckedRadioButtonId());
+                selectedRadioButton = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
                 //get RadioButton text
                 String yourVote = selectedRadioButton.getText().toString();
                 // display it as Toast to the user
-                Toast.makeText(SelectionVehicleActivity.this, "Selected Radio Button is:" + yourVote , Toast.LENGTH_LONG).show();
+                Toast.makeText(SelectionVehicleActivity.this, "Selected Radio Button is:" + yourVote, Toast.LENGTH_LONG).show();
             }
         });
     }
+}
