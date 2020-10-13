@@ -33,9 +33,9 @@ public class BookingSeatsActivity extends AppCompatActivity {
                 // get the selected RadioButton of the group
                 selectedRadioButton = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
                 //get RadioButton text
-                String yourVote = selectedRadioButton.getText().toString();
+                String yourSeat = selectedRadioButton.getText().toString();
                 // display it as Toast to the user
-                Toast.makeText(BookingSeatsActivity.this, "Selected Radio Button is:" + yourVote, Toast.LENGTH_LONG).show();
+                Toast.makeText(BookingSeatsActivity.this, "Selected Radio Button is:" + yourSeat, Toast.LENGTH_LONG).show();
             }
         });
     }

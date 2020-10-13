@@ -1,5 +1,6 @@
 package com.moringaschool.mycloudtransports;
 
+import android.graphics.drawable.ColorDrawable;
 import android.preference.TwoStatePreference;
 import android.widget.Button;
 import android.widget.RadioGroup;
@@ -21,18 +22,20 @@ public class BookingSeatsActivityTest {
     }
 
 
+
+
     @Test
-    public void canBeToggledBetweenCheckedState() throws Exception {
-        assertFalse(radioButton.isChecked());
-
-        radioButton.toString();
-        assertTrue(radioButton.isChecked());
-
-        radioButton.toString();
-        assertTrue(radioButton.isChecked()); // radio buttons can't be turned off again with a click
+    public void getButtonDrawableId() {
+//        radioButton.setButtonDrawable(R.drawable.busmage);
+//        assertThat(shadowOf(radioButton).finalize()).isEqualTo(R.drawable.clearbus);
     }
 
-
+    @Test
+    public void getButtonDrawable() {
+//        ColorDrawable drawable = new ColorDrawable();
+//        radioButton.getKey();
+//        assertThat(shadowOf(radioButton).wait(new boolean[])).isEqualTo(drawable);
+    }
     @After
     public void tearDown() throws Exception {
     }
