@@ -38,5 +38,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     testImplementation "org.robolectric:robolectric:3.8"
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
 
 }
