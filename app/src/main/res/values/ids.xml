@@ -10,4 +10,5 @@
     <item name="UserEditText" type="id" />
     <item name="appNameTextView" type="id" />
     <item name="login" type="id" />
+    <item name="findLoginButton" type="id" />
 </resources>

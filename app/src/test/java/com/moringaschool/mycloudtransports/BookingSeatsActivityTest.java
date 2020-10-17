@@ -33,15 +33,15 @@ public class BookingSeatsActivityTest {
 //        assertThat(shadowOf(radioButton).finalize()).isEqualTo(R.drawable.clearbus);
     }
 
-    @Test
-    public void clickingSubmit_shouldStartSubmitActivity() {
-        BookingSeatsActivity activity = Robolectric.setupActivity(BookingSeatsActivity.class);
-        activity.findViewById(R.id.buttonSubmit).performClick();
-
-        Intent expectedIntent = new Intent(activity, SelectionVehicleActivity.class);
-        Intent actual = shadowOf(RuntimeEnvironment.application).getNextStartedActivity();
-        assertEquals(expectedIntent.getComponent(), actual.getComponent());
-    }
+//    @Test
+//    public void clickingSubmit_shouldSubmitBookingSeats() {
+//        BookingSeatsActivity activity = Robolectric.setupActivity(BookingSeatsActivity.class);
+//        activity.findViewById(R.id.buttonSubmit).performClick();
+//
+//        Intent expectedIntent = new Intent(activity, SelectionVehicleActivity.class);
+//        Intent actual = shadowOf(RuntimeEnvironment.application).getNextStartedActivity();
+//        assertEquals(expectedIntent.getComponent(), actual.getComponent());
+//    }
 
 
 
