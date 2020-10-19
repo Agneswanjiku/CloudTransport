@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="etpassword" type="id"/>
-    <item name="radioGroup" type="id"/>
-    <item name="tv_deviceName" type="id"/>
+    <item name="radioGroup" type="id" />
+    <item name="tv_deviceName" type="id" />
 
-    <item name="text_view_selected" type="id"/>
-    <item name="button_apply" type="id"/>
-    <item name="rGroup" type="id"/>
+    <item name="text_view_selected" type="id" />
+    <item name="button_apply" type="id" />
+    <item name="rGroup" type="id" />
     <item name="UserEditText" type="id" />
     <item name="appNameTextView" type="id" />
     <item name="login" type="id" />
     <item name="findLoginButton" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="listView" type="id" />
+    <item name="locationTextView" type="id" />
+    <item name="errorTextView" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="lnkRegister" type="id" />
+    <item name="Loginbutton" type="id" />
 </resources>
