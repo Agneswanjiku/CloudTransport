@@ -1,4 +1,4 @@
 package com.moringaschool.mycloudtransports;
 
-public class Business {
+public class TransportActivity {
 }
