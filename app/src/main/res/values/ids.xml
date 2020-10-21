@@ -18,4 +18,6 @@
     <item name="progressBar" type="id" />
     <item name="lnkRegister" type="id" />
     <item name="Loginbutton" type="id" />
+    <item name="mlocationTextView" type="id" />
+    <item name="mListview" type="id" />
 </resources>
