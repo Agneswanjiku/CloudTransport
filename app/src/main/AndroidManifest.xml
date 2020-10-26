@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.moringaschool.mycloudtransports">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name="ui.MainActivity"
             tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,22 +23,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegistrationActivity"
-            android:label="Registration"></activity>
-        <activity
-            android:name=".SelectionVehicleActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.moringaschool.mycloudtransports.MainActivity">
-            </meta-data>
-        </activity>
 
-        <activity android:name=".BookingSeatsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.moringaschool.mycloudtransports.MainActivity"></meta-data>
-        </activity>
+
+        <!--OR Other activities like this And  intent filter is not necessary in other activites-->
+        <activity android:name="ui.registrationformActivity"></activity>
+        <activity android:name="ui.BookingSeatsActivity"></activity>
+        <activity android:name="ui.SelectionVehicleActivity"></activity>
+
+
     </application>
 
 </manifest>
