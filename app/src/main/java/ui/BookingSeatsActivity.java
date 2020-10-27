@@ -35,7 +35,7 @@ public class BookingSeatsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bookingseatsactivity);
+        setContentView(R.layout.bookingactivity);
         buttonSubmit = (Button) findViewById(R.id.buttonSubmit);
         radioGroup = (RadioGroup) findViewById(R.id.rGroup);
 

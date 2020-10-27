@@ -1,6 +1,5 @@
 package com.moringaschool.mycloudtransports;
 
-import ui.SelectionVehicleActivity;
 import ui.registrationformActivity;
 
 public class Robolectric {
