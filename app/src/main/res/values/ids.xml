@@ -22,4 +22,5 @@
     <item name="mListview" type="id" />
     <item name="LocationTextView" type="id" />
     <item name="SubmitButton" type="id" />
+    <item name="TextView2" type="id" />
 </resources>

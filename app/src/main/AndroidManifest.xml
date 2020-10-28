@@ -26,8 +26,6 @@
 
 
         <!--OR Other activities like this And  intent filter is not necessary in other activites-->
-        <activity android:name="ui.registrationformActivity"></activity>
-        <activity android:name="ui.BookingSeatsActivity"></activity>
 
 
     </application>

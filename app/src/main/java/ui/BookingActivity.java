@@ -20,13 +20,13 @@ public class BookingActivity extends AppCompatActivity {
     RadioButton selectedRadioButton;
     Button buttonSubmit;
 
-    @BindView(R.id.etName)
+    @BindView(R.id.rnobbles)
     EditText metName;
-    @BindView(R.id.etPassword)
+    @BindView(R.id.rEconomic)
     EditText metPasssword;
     @BindView(R.id.appNameTextView)
     TextView mappNameTextView;
-    @BindView(R.id.btnLogin)
+    @BindView(R.id.buttonSubmit)
     Button mbtnLogin;
 
     @Override
