@@ -23,4 +23,8 @@
     <item name="LocationTextView" type="id" />
     <item name="SubmitButton" type="id" />
     <item name="TextView2" type="id" />
+    <item name="NameTextView" type="id" />
+    <item name="TrainImageView" type="id" />
+    <item name="textViewHead" type="id" />
+    <item name="textViewDescription" type="id" />
 </resources>

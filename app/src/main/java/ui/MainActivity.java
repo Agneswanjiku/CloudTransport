@@ -12,37 +12,49 @@ import com.moringaschool.mycloudtransports.R;
 
 
 public class MainActivity  extends AppCompatActivity {
-    private Button mlogout;
-    private TextView mTextView2;
-    private Object View;
 
+    private Button logout;
+    Bundle bundle;
+    String value;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button mlogout_Button = (Button) findViewById(R.id.logout);
-        TextView mTextView = (TextView) findViewById(R.id.TextView2);
+        /*
+         * Initializing button XML button id. findViewById is a method which
+         * helps to initialize with particular id. btn_go_to_another_activity is
+         * a button name which I have given in XML file
+         */
+        logout = (Button) findViewById(R.id.logout);
+        // Initializing EditText view
+        textView = (TextView) findViewById(R.id.textView);
 
-//        mlogout_Button.setOnClickListener((View) = new void[]{Toast.makeText(MainActivity.this, "loading transport RegisterActivity!", Toast.LENGTH_LONG).show()};
+        // Bundle
+        bundle = new Bundle();
 
-    }
-    public void requestRegister(View view){
-        Intent intent = new Intent(this,RegisterActivity.class);
-        startActivity(intent);
-    }
-    public void railwayStation(View view){
-        Intent intent = new Intent(this, TransportActivity.class);
-        startActivity(intent);
-    }
-    public void bookingSeats(View view){
-        Intent intent = new Intent(this,BookingActivity.class);
-        startActivity(intent);
+        logout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                // Get value from EditText from main_activity layout
+                value = textView.getText().toString();
+
+                bundle.putString("value", value);
+
+                /*
+                 * Intent is just like glue which helps to navigate one activity
+                 * to another.
+                 */Intent intent = new Intent(MainActivity.this,
+                        RegisterActivity.class);
+                // Pass data to AnotherActivity
+                intent.putExtras(bundle);
+                startActivity(intent); // startActivity allow you to move
+            }
+        });
     }
 
-    private class LENGTH {
-
-    }
 }
-

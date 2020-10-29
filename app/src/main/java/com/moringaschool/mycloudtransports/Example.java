@@ -1,30 +1,25 @@
-
-package com.moringaschool.mycloudtransports;
 //
-//import android.os.Parcel;
-//import android.os.Parcelable;
-////
-////import com.google.gson.annotations.Expose;
-////import com.google.gson.annotations.SerializedName;
-//
-////import org.apache.commons.lang.builder.EqualsBuilder;
-//import org.apache.commons.lang.builder.HashCodeBuilder;
-//import org.apache.commons.lang.builder.ToStringBuilder;
+//package com.moringaschool.mycloudtransports;
 //
 //import java.io.Serializable;
+//import android.os.Parcel;
+//import android.os.Parcelable;
+//import android.os.Parcelable.Creator;
+//import com.google.gson.annotations.Expose;
+//import com.google.gson.annotations.SerializedName;
+//import org.apache.commons.lang.builder.EqualsBuilder;
+//import org.apache.commons.lang.builder.HashCodeBuilder;
+//import org.apache.commons.lang.builder.ToStringBuilder;
 //
 //public class Example implements Serializable, Parcelable
 //{
 //
-//    @SerializedName("foo")
+//    @SerializedName("type")
 //    @Expose
-//    private String foo;
-//    @SerializedName("bar")
+//    private String type;
+//    @SerializedName("properties")
 //    @Expose
-//    private Long bar;
-//    @SerializedName("baz")
-//    @Expose
-//    private Boolean baz;
+//    private Properties properties;
 //    public final static Parcelable.Creator<Example> CREATOR = new Creator<Example>() {
 //
 //
@@ -41,64 +36,50 @@ package com.moringaschool.mycloudtransports;
 //
 //    }
 //    ;
-//    private final static long serialVersionUID = -4756281698975570725L;
+//    private final static long serialVersionUID = -1060724873025571437L;
 //
 //    protected Example(Parcel in) {
-//        this.foo = ((String) in.readValue((String.class.getClassLoader())));
-//        this.bar = ((Long) in.readValue((Long.class.getClassLoader())));
-//        this.baz = ((Boolean) in.readValue((Boolean.class.getClassLoader())));
+//        this.type = ((String) in.readValue((String.class.getClassLoader())));
+//        this.properties = ((Properties) in.readValue((Properties.class.getClassLoader())));
 //    }
 //
 //    public Example() {
 //    }
 //
-//    public String getFoo() {
-//        return foo;
+//    public String getType() {
+//        return type;
 //    }
 //
-//    public void setFoo(String foo) {
-//        this.foo = foo;
+//    public void setType(String type) {
+//        this.type = type;
 //    }
 //
-//    public Example withFoo(String foo) {
-//        this.foo = foo;
+//    public Example withType(String type) {
+//        this.type = type;
 //        return this;
 //    }
 //
-//    public Long getBar() {
-//        return bar;
+//    public Properties getProperties() {
+//        return properties;
 //    }
 //
-//    public void setBar(Long bar) {
-//        this.bar = bar;
+//    public void setProperties(Properties properties) {
+//        this.properties = properties;
 //    }
 //
-//    public Example withBar(Long bar) {
-//        this.bar = bar;
-//        return this;
-//    }
-//
-//    public Boolean getBaz() {
-//        return baz;
-//    }
-//
-//    public void setBaz(Boolean baz) {
-//        this.baz = baz;
-//    }
-//
-//    public Example withBaz(Boolean baz) {
-//        this.baz = baz;
+//    public Example withProperties(Properties properties) {
+//        this.properties = properties;
 //        return this;
 //    }
 //
 //    @Override
 //    public String toString() {
-//        return new ToStringBuilder(this).append("foo", foo).append("bar", bar).append("baz", baz).toString();
+//        return new ToStringBuilder(this).append("type", type).append("properties", properties).toString();
 //    }
 //
 //    @Override
 //    public int hashCode() {
-//        return new HashCodeBuilder().append(bar).append(baz).append(foo).toHashCode();
+//        return new HashCodeBuilder().append(type).append(properties).toHashCode();
 //    }
 //
 //    @Override
@@ -110,27 +91,23 @@ package com.moringaschool.mycloudtransports;
 //            return false;
 //        }
 //        Example rhs = ((Example) other);
-//        return new EqualsBuilder().append(bar, rhs.bar).append(baz, rhs.baz).append(foo, rhs.foo).isEquals();
+//        return new EqualsBuilder().append(type, rhs.type).append(properties, rhs.properties).isEquals();
 //    }
 //
 //    public void writeToParcel(Parcel dest, int flags) {
-//        dest.writeValue(foo);
-//        dest.writeValue(bar);
-//        dest.writeValue(baz);
+//        dest.writeValue(type);
+//        dest.writeValue(properties);
 //    }
 //
 //    public int describeContents() {
 //        return  0;
 //    }
 //
-//    private class EqualsBuilder {
-//    }
-//
 //    private class HashCodeBuilder {
 //    }
 //
-//    private class ToStringBuilder {
-//        public ToStringBuilder(Example example) {
+//    private class EqualsBuilder {
+//        public EqualsBuilder append(String type, String type1) {
 //        }
 //    }
 //}
