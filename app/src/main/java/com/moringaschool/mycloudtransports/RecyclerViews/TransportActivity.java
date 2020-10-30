@@ -1,4 +1,4 @@
-package ui;
+package com.moringaschool.mycloudtransports.RecyclerViews;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +19,8 @@ public class TransportActivity extends AppCompatActivity {
     private String[] Places = new String[] {"Nairobi", "Mombasa",
             "emali", "Athiriver", "wote"};
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +28,9 @@ public class TransportActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.listView);
         mLocationTextView = (TextView) findViewById(R.id.locationTextView);
-
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, Places);
         mListView.setAdapter(adapter);
-
         mListView.setAdapter(adapter);
-
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -39,9 +38,8 @@ public class TransportActivity extends AppCompatActivity {
                 Toast.makeText(TransportActivity.this, Places, Toast.LENGTH_LONG).show();
             }
         });
-
         Intent intent = getIntent();
         String location = intent.getStringExtra("location");
-        mLocationTextView.setText("Here are all the restaurants near: " + location);
+        mLocationTextView.setText("Here are all the train is about to leave near: " + location);
     }
-}
+    }
