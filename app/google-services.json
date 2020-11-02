@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "692194009020",
+    "firebase_url": "https://cloudtransports.firebaseio.com",
+    "project_id": "cloudtransports",
+    "storage_bucket": "cloudtransports.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692194009020:android:2f0aa70a8e2e78818f15b9",
+        "android_client_info": {
+          "package_name": "com.moringaschool.mycloudtransports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692194009020-rpj11o6kl86tci3t610ei98sg9nvu3a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMe13YO5iy7HHgT0Oo0krKu8ttc0LEiqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692194009020-rpj11o6kl86tci3t610ei98sg9nvu3a7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "692194009020-gnrt8mb4o24em9vt9hcn8lps1lh66ire.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Moringa.CloudTransport",
+                "app_store_id": "23456789"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
