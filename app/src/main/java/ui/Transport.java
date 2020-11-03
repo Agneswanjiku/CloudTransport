@@ -43,6 +43,9 @@ public class Transport {
         this.member = member;
     }
 
+    public Transport(int seatId, String title, String body) {
+    }
+
     public String getRequestTime() {
         return requestTime;
     }

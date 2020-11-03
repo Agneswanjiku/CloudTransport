@@ -27,4 +27,9 @@
     <item name="TrainImageView" type="id" />
     <item name="textViewHead" type="id" />
     <item name="textViewDescription" type="id" />
+    <item name="Recyclerview" type="id" />
+    <item name="transportImageView" type="id" />
+    <item name="transportTransporRegion" type="id" />
+    <item name="transportMeans" type="id" />
+    <item name="transportPopulation" type="id" />
 </resources>

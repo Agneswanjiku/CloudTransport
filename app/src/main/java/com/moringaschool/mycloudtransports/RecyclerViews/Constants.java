@@ -1,4 +1,6 @@
-package com.moringaschool.mycloudtransports;
+package com.moringaschool.mycloudtransports.RecyclerViews;
+
+import com.moringaschool.mycloudtransports.BuildConfig;
 
 public class Constants {
     public static final String API_KEY = BuildConfig.APPLICATION_ID;

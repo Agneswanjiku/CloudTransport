@@ -39,7 +39,7 @@ public TransportListAdapter.TransportViewHolder onCreateViewHolder(ViewGroup par
     }
 
 
-    public class TransportViewHolder extends RecyclerView.ViewHolder {
+    public static class TransportViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.TrainImageView)
     ImageView mTransportImageView;
     @BindView(R.id.NameTextView)
@@ -61,7 +61,11 @@ public TransportListAdapter.TransportViewHolder onCreateViewHolder(ViewGroup par
         mRatingTextView.setText("Rating: " + Train.getRating() + "/5");
     }
 
-    public class Transport {
+        public Transport get(TransportViewHolder transportViewHolder) {
+            return null;
+        }
+
+        public class Transport {
         public int getName() {
             return Integer.parseInt(null);
         }
